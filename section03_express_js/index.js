@@ -37,6 +37,15 @@ app.get('/blog{/:titulo}', (req, res) => {
     }
 })
 
+app.get('/canal/youtube', (req, res) => {
+    var canal = req.query.canal
+    if (canal) {
+        res.send(`<h1>Canal do youtube: ${canal}</h1>`)
+    } else {
+        res.send(`<h1>Canal do youtube não foi informado</h1>`)
+    }
+})
+
 // Carregamento do servidor sempre por último
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
