@@ -14,3 +14,20 @@ Nodemon é uma ferramenta que automatiza o processo de reinicialização do serv
 
 - Instalar: npm install nodemon -g
 - Executar: nodemon index.js
+
+## Docker & MySQL
+
+Configuração do banco de dados MySQL via Docker Compose.
+
+- Subir containers (em segundo plano): `docker compose up -d`
+- Parar containers: `docker compose down`
+- Ver status dos containers: `docker compose ps`
+- Ver logs do MySQL: `docker compose logs -f mysql`
+
+### Credenciais de Conexão:
+- **Host:** `localhost`
+- **Porta:** `3306`
+- **Database:** `cursodenodejs`
+- **Usuário Root:** `root` / **Senha:** `root`
+- **Usuário Padrão:** `nodejs` / **Senha:** `password123`
+- **Interface Web (phpMyAdmin):** http://localhost:8080
